@@ -15,9 +15,13 @@
             {{/link-to}}
             <button {{action 'deleteNode' note}}>Delete Note</button>
           </li>
+        {{else}}
+          <div>No notes found</div>
         {{/each}}
       </ul>
     </div>
   </div>
-  <div class="col-md-8">{{outlet}}</div>
+  <div class="col-md-8">
+    {{outlet}}
+  </div>
 </div>
